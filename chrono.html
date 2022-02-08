@@ -30,7 +30,7 @@
             width: 90%;
         }
 
-        div#progression > span {
+        div#progression>span {
             background-color: purple;
             height: 30px;
             width: 0%;
@@ -40,7 +40,7 @@
 </head>
 
 <body id="body" class="dark">
-
+    <button>start</button>
     <h1 id='chrono'></h1>
 
     <div id='progression'><span id="barre"></span></div>
@@ -59,7 +59,7 @@
             document.getElementById('chrono').textContent = laps;
 
             // Modifier la barre de progression
-            width = width = (5 - laps)*20;
+            width = width = (5 - laps) * 20;
             document.getElementById('barre').style.width = width + "%";
 
             laps = laps - 1;
